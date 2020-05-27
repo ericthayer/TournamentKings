@@ -1,0 +1,131 @@
+body {
+  // background: linear-gradient(to top, $color-brand-yellow 0%, rgba(209, 118, 0, .15) 70%), url("/media/images/bg/bg-space-man-right-alpha-60.png") no-repeat right top, $color-brand-yellow;
+  background-color: $color-brand-dark;
+  display: flex;
+  flex-direction: column;
+  // font-family: $SourceSans;
+  font-size: 16px;
+  min-height: 100vh;
+  position: relative;
+}
+
+.navbar-spark {
+  background: transparent;
+  padding: 0;
+  position: relative;
+
+  & > .container {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .nav-link {
+    color: $color-brand-yellow;
+  }
+}
+
+.nav-heading {
+  color: $color-brand-yellow;
+}
+
+.card-body a {
+  color: $color-brand-blue;
+}
+
+.card-header {
+  color: $color-brand-dark;
+}
+
+.card-body .btn-primary {
+  color: $color-brand-dark;
+  background-color: $color-brand-yellow;
+  border-color: $color-brand-dark;
+}
+
+.card-body .btn-primary:hover {
+  color: $color-brand-light;
+  background-color: $color-brand-blue;
+  border-color: $color-brand-dark;
+}
+
+.vtb-item-players {
+  background-color: $color-brand-gray !important;
+  color: $color-brand-light !important;
+  width:10em;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.vtb-item-players div {
+  padding: 2px !important;
+}
+
+.vtb-item-players .player-name {
+  float: left;
+  width: 7.8em;
+}
+
+.vtb-item-players .player-score {
+  float: right;
+  width: 1.8em;
+  background-color: $color-brand-dark;
+  color: $color-brand-yellow;
+}
+.btn-tk {
+  color: #000000 !important;
+  background-color: #f7be00 !important;
+}
+
+.btn-tk-lrg {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.tk-thumb {
+  max-width:650px;
+
+}
+
+// Match result screen thumb
+
+.tk-thumb {
+    max-width:150px;
+    max-height:150px;
+}
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.navbar-spark .logo-full-ribbon {
+  height: 6em !important;
+}
+
+.theme-light {
+
+  .ribbon {
+    fill: $color-brand-yellow;
+  }
+
+  .text,
+  .crown,
+  .letter {
+    fill: $color-brand-dark;
+  }
+
+  .navbar-toggle-menu {
+    background: $color-brand-yellow;
+    color: $color-brand-dark;
+  }
+
+  .navbar-desktop .nav > li > a {
+    color: $color-brand-yellow;
+
+    &:hover,
+    &:focus  {
+      background: $color-brand-yellow;
+      color: $color-brand-dark;
+    }
+  }
+}

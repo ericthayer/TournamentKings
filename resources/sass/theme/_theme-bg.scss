@@ -1,0 +1,86 @@
+// Themes
+@mixin theme-light {
+  background-color: $color-brand-yellow;
+  color: $color-brand-dark;
+}
+
+@mixin theme-dark {
+  background-color: $color-brand-dark;
+  color: $color-brand-light;
+}
+
+@mixin bg-tk-yellow {
+  background: $color-brand-yellow;
+  background: linear-gradient(45deg, $color-brand-yellow 0%, rgba(209, 118, 0, .15) 70%), url("/media/images/bg/bg-line-fractal-orange.svg") no-repeat right -10vh, $color-brand-yellow;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-blend-mode: multiply;
+}
+
+@mixin bg-tk-black {
+  background: url("/media/images/bg/bg-line-fractal-white-alpha-25.svg") no-repeat right bottom, $color-brand-dark;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-blend-mode: luminosity;
+}
+
+@mixin fixed-img-overlay {
+  background: url("/media/images/bg/bg-line-fractal-white-alpha-25.svg") no-repeat right bottom, linear-gradient(45deg, #5d353d, #2c2150);
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .75;
+  height: 100%;
+  width: 100vw;
+  z-index: 0;
+
+  img {
+    flex: 1;
+    mix-blend-mode: luminosity;
+    object-fit: cover;
+    object-position: center;
+    opacity: .4;
+  }
+
+  // < 640
+  @media screen and (max-width: 40em) {
+
+    img {
+      opacity: .2;
+    }
+  }
+
+}
+
+%theme-light {
+  @include theme-light;
+}
+
+%theme-dark {
+  @include theme-dark;
+}
+
+%bg-tk-yellow {
+  @include bg-tk-yellow;
+}
+
+%bg-tk-black {
+  @include bg-tk-black;
+}
+
+%fixed-img-overlay {
+  @include fixed-img-overlay;
+}
+
+.fixed-img-overlay {
+  @extend %fixed-img-overlay !optional;
+}
+
+%bg-yellow {
+  background: $color-brand-yellow;
+}
+
+%bg-black {
+  background: $color-brand-dark;
+}

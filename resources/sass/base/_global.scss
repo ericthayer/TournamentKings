@@ -1,0 +1,43 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  font-size: 100%;
+  overflow-y: scroll;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 60em;
+  padding-top: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  padding-left: 2em;
+  width: 100%;
+}
+
+section > .container {
+  padding-top: 4em;
+  padding-right: 2em;
+  padding-bottom: 4em;
+  padding-left: 2em;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+
+  a {
+    text-decoration: none;
+  }
+}
+

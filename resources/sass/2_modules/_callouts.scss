@@ -1,0 +1,57 @@
+.callout {
+  background: #FFFFFF;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  .logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 10rem;
+  }
+
+  p {
+    font-size: 1.4em;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 46ch;
+  }
+
+}
+
+section.clean {
+  background: transparent;
+  color: $color-brand-light;
+  display: flex;
+  flex: 1;
+  // padding-top: 10vmin;
+
+  > .container {
+    padding: 0 1em;
+  }
+
+  p {
+    font-size: 1.25em;
+    max-width: 60ch;
+  }
+
+  // > 1000
+  @media screen and (max-width: 999px) {
+    align-items: center;
+    padding-top: 2em;
+  }
+
+  // 1000
+  @media screen and (min-width: $break-1000) {
+
+    p {
+      font-size: 1.75em;
+    }
+  }
+
+}

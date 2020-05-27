@@ -1,0 +1,87 @@
+// Custom Fonts
+
+// TODO: We should be subsetting and serving locally for best performance. EricT
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro:400,600,700&display=swap");
+
+// Bullpen
+
+@font-face {
+  font-family: "Bullpen Heavy Italic";
+  src: url("fonts/bullpenhv-italic-webfont.woff2") format("woff2"), url("fonts/bullpenhv-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bullpen 3D";
+  src: url("fonts/bullpenthreed-regular-webfont.woff2") format("woff2"), url("fonts/bullpenthreed-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bullpen Heavy";
+  src: url("fonts/bullpenhv-regular-webfont.woff2") format("woff2"), url("fonts/bullpenhv-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Font Modifiers
+
+.font-source-sans {
+  @include font-SourceSans;
+}
+
+.font-bullpen {
+  @include font-BullpenHeavy;
+}
+
+.font-bullpen-italic {
+  @include font-BullpenHeavyItalic;
+}
+
+.font-bullpen-3D {
+  @include font-BullpenHeavy3D;
+}
+
+// Globals
+
+body {
+  font-family: $SourceSans;
+}
+
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6 {
+  font-family: $BullpenHeavy;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  max-width: 60ch;
+
+  strong {
+    font-weight: 600;
+  }
+}
+
+.icon {
+  display: inline-block;
+  fill: currentColor;
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+  position: relative;
+  top: -0.0625em;
+  margin-right: .25rem;
+  margin-left: .25rem;
+  text-align: center;
+  stroke-width: 0;
+}

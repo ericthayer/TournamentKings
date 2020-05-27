@@ -1,0 +1,42 @@
+// Theme
+@import "./../../vendor/laravel/spark-aurelius/resources/assets/sass/spark";
+
+@import 'theme/theme-colors';
+@import 'theme/theme-bg';
+
+// Utilitiles
+@import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'utilities/helpers';
+
+// Base
+@import 'base/global';
+@import 'base/typography';
+
+
+// We are following the Atomic Design pattern of naming UI components
+// http://atomicdesign.bradfrost.com/chapter-2/
+
+// 1. Elements (atoms)
+@import '1_elements/buttons';
+
+// 2. Modules (molecules)
+@import '2_modules/callouts';
+@import '2_modules/forms';
+@import '2_modules/icon-list';
+
+// 3. Components (organisims)
+@import '3_components/main-menu';
+@import '3_components/app-nav';
+@import '3_components/footer-desktop';
+@import '3_components/tournament-bracket';
+
+// 4. Templates
+@import '4_templates/app-wrap';
+@import '4_templates/site-header';
+@import '4_templates/main-content';
+
+// 5. Pages
+
+// Overrides (shame)
+@import 'overrides/tk';

@@ -1,0 +1,191 @@
+/*!* Medium Layout: 2560px. *!*/
+/*@media only screen and (min-width: 2560px) and (max-width: 2560px) { */
+/*  .header-top-area {*/
+/*    height: 2680px;*/
+/*}*/
+/*.content-right {*/
+/*    padding-top: 690px;*/
+/*}*/
+/*.timeline-text {*/
+/*    padding-top: 670px;*/
+/*}*/
+/*.wh-element:before {*/
+/*    left: 37%;*/
+/*}*/
+/*.wh-element:after {*/
+/*    right: 35%;*/
+/*}*/
+/*}*/
+
+/*!* Medium Layout: 1600px. *!*/
+/*@media only screen and (min-width: 1600px) and (max-width: 1600px) { */
+/* */
+/*.header-top-area {*/
+/*    height: 1710px;*/
+/*}*/
+/*.content-right {*/
+/*    padding-top: 275px;*/
+/*}*/
+/*}*/
+
+/*!* Medium Layout: 1680px. *!*/
+/*@media only screen and (min-width: 1680px) and (max-width: 1680px) { */
+/*  .header-top-area {*/
+/*    height: 1790px;*/
+/*}*/
+/*.content-right {*/
+/*    padding-top: 18vw;*/
+/*}*/
+/*.timeline-text {*/
+/*    padding-top: 24vw;*/
+/*}*/
+/*}*/
+
+
+/* Tablet Layout: 1920px. */
+@media only screen and (min-width: 1920px) and (max-width: 1960px) { 
+ .content-right {
+    padding-top: 400px !important;
+}
+.header-top-area {
+    height: 2050px !important;
+}
+.timeline-text {
+    padding-top: 550px;
+}
+.wh-element:before {
+    left: 33%;
+}
+.wh-element:after {
+    right: 31%;
+}
+
+  
+}
+
+@media only screen and (max-width: 1199px) { 
+    #fphone, #fbirthday, #fcode {
+        width: 33.05%;
+    }
+    .content-right strong {
+        font-size: 40px;
+    }
+    .content-right p {
+        font-size: 26px;
+    }
+    .timeline-text {
+        padding-top: 17vw;
+    }
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+.header-top-logo.text-left img {
+    height: 150px;
+}
+.content-right {
+    padding-top: 50px;
+} 
+.timeline-text {
+    padding-top: 200px;
+} 
+ #fphone, #fbirthday, #fcode {
+    width: 32.9%;
+}
+.join-left-content h2 {
+    font-size: 30px;
+} 
+.join-left-content p {
+    font-size: 18px;
+}
+ .join-area {
+    padding-top: 50px;
+}
+.content-left p {
+    font-size: 22px;
+}
+ 
+.content-left p {
+    max-width: 480px;
+}
+input {
+    font-size: 24px!important;
+}
+ 
+    
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+ .header-top-logo img {
+	height: 150px;
+}
+.content-right {
+    padding-top: 30px;
+}	
+
+.content-right p {
+    width: 85%;
+    font-size: 24px;
+}	
+
+.timeline-content span {
+    padding-left: 10px;
+    font-size: 20px;
+}	
+.timeline-text {
+    padding-top: 50px;
+}	
+.header-top-area {
+    background-position: center center;
+    padding-bottom: 10vw;
+}	
+.join-right-content {
+    text-align: center;
+}	
+#fphone, #fbirthday, #fcode {
+    width: 100%;
+}	
+.join-left-content h2 {
+    font-size: 34px;
+}	
+.join-left-content p br {
+    display: none;
+}	
+.join-left-content {
+    text-align: center;
+}	
+
+input, textarea {
+    border: 2px solid #f0c231;
+    margin: 3px 0;
+    font-size: 15px;
+    padding: 4px 0px 4px 20px;
+}	
+#fcomment {
+    height: 80px;	
+	
+}		
+.content-right strong {
+    font-size: 36px;
+}	
+.content-left h1.out {
+    font-size: 50px;
+}	
+.content-right p {
+    margin-top: 5px;
+}	
+.timeline {
+    padding-top: 50px;
+}	
+.content-left p {
+    font-size: 20px;
+    max-width: none;
+}	
+input {
+    font-size: 24px!important;
+}	
+    
+}
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+}

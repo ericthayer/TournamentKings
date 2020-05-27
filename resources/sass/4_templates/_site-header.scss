@@ -1,0 +1,11 @@
+.site-header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 3;
+
+  @media screen and (min-width: $break-1600) {
+    font-size: 22px;
+  }
+}
+

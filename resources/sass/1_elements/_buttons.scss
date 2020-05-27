@@ -1,0 +1,56 @@
+// Buttons
+
+// TODO: apply button properties via @extend instead of @includes! EricT
+
+.btn,
+a.btn {
+
+  &-primary {
+    @include button-primary;
+  }
+
+  &-primary-dark {
+    @include button-primary-dark;
+  }
+
+  &-primary-outline {
+    @include button-primary-outline;
+  }
+
+  &-primary-outline-dark {
+    @include button-primary-outline-dark;
+  }
+
+  &-outline-light {
+    @include button-outline-light;
+  }
+
+  &-outline-dark {
+    @include button-outline-dark;
+  }
+}
+
+// .btn-primary {
+//   @include button-primary;
+// }
+
+// .btn-primary-dark {
+//   @include button-primary-dark;
+// }
+
+// .btn-primary-outline {
+//   @include button-primary-outline;
+// }
+
+// .btn-primary-outline-dark {
+//   @include button-primary-outline-dark;
+// }
+
+// .btn-outline-light {
+//   @include button-outline-light;
+// }
+
+// .btn-outline-dark {
+//   @include button-outline-dark;
+// }
+

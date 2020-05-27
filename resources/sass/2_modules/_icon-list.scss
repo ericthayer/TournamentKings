@@ -1,0 +1,19 @@
+.icon-list {
+  display: flex;
+  font-size: 1.5em;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  padding-top: 1.5em;
+  padding-bottom: 0;
+  padding-left: 0;
+
+  > li {
+    margin: 0 .3rem;
+  }
+
+  .icon-fb {
+    font-size: .75em;
+  }
+}

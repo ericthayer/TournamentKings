@@ -1,0 +1,40 @@
+.app-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+
+  > ul {
+    margin-bottom: 0;
+  }
+}
+
+.app-menu {
+  flex: 1;
+  margin-right: auto;
+  padding-left: 1em;
+
+  .nav-link {
+    @include font-BullpenHeavy;
+    font-size: 1.125em;
+    letter-spacing: .03em;
+    padding: 0;
+  }
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 0;
+
+  .nav-link {
+    font-size: .875em;
+    padding: 0;
+  }
+
+  @media screen and (min-width: $break-640) {
+    margin-left: auto;
+  }
+}

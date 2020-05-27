@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97 32">
+  <defs>
+    <polygon id="icon-arrow-down-a" points="80 155 176 155 176 163.421 128 187 80 163.421"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-79.5 -155)">
+    <use fill="#636569" xlink:href="#icon-arrow-down-a"/>
+  </g>
+</svg>

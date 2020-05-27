@@ -1,0 +1,82 @@
+.footer-desktop {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: auto;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  padding-left: 5vw;
+  position: relative;
+  z-index: 3;
+
+  .logo {
+    margin-right: auto;
+    margin-left: -2vw;
+
+    svg {
+      transform: translateY(-.5em);
+    }
+  }
+
+  .copyrights {
+    color: #DDD;
+    opacity: .7;
+    font-weight: 300;
+    font-size: .875em;
+    // flex-grow: 1;
+    margin: 0;
+    max-width: 100%;
+    padding-right: 1em;
+    transition: .4s ease;
+
+    a {
+      color: currentColor;
+      text-decoration: underline;
+      transition: .4s ease;
+
+      &:hover,
+      &:focus {
+        color: $color-brand-yellow;
+        text-decoration: none;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  .icon-list {
+    justify-content: flex-end;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+
+    .icon {
+      color: $color-brand-yellow;
+      fill: $color-brand-yellow;
+    }
+  }
+
+  @media screen and (max-width: $break-768) {
+
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1em;
+
+    .logo {
+      flex: 1 1 100%;
+      display: flex;
+      justify-content: center;
+      margin-right: auto;
+      margin-bottom: 1.5em;
+      margin-left: auto;
+    }
+
+  }
+}
+

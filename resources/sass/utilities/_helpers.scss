@@ -1,0 +1,163 @@
+// Display
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+@mixin hidden-small {
+  @media (max-width: 999px) {
+    display: none !important;
+  }
+}
+
+.hidden-small {
+  @include hidden-small;
+}
+
+@mixin hidden-large {
+  @media (min-width: $break-1000) {
+    display: none !important;
+  }
+}
+
+.hidden-large {
+  @include hidden-large;
+}
+
+// CSS counter
+
+@mixin counter-parent {
+  counter-increment: counter-items;
+}
+
+@mixin counter-item {
+
+  &::before {
+    background: $color-brand-yellow;
+    border-radius: 50%;
+    color: $color-brand-dark;
+    content: counter(counter-items);
+    display: flex;
+    font-family: $SourceSans;
+    font-size: 1.875em;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    width: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1.5rem;
+    padding: .5em;
+    text-align: center;
+  }
+}
+
+%counter-item {
+  @include counter-item;
+
+  &-one::before {
+    content: "1";
+  }
+
+  &-two::before {
+    content: "2";
+  }
+
+  &-three::before {
+    content: "3";
+  }
+}
+
+// CSS Tooltip
+
+@mixin has-tooltip {
+  position: relative;
+  &:hover .tooltip,
+  &:focus .tooltip,
+  a:focus .tooltip,
+  &:hover .icon-tooltip,
+  &:focus .icon-tooltip,
+  a:focus .icon-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+@mixin tooltip {
+  background-color: $color-brand-yellow;
+  color: $color-brand-dark;
+  //display: none;
+  font-size: .875rem;
+  line-height: 1.2;
+  margin-bottom: .875rem;
+  opacity: 0;
+  padding: .5rem .45em .65rem;
+  position: absolute;
+  bottom: 100%;
+  left: -100%;
+  left: -50%;
+  right: -50%;
+  visibility: hidden;
+  text-align: center;
+  transform: translateY(10px);
+  transition: all .25s ease-out;
+  border-radius: .2rem;
+  z-index: 50;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border: 8px solid transparent;
+    border-top-color: $color-brand-yellow;
+    bottom: -16px;
+    left: calc(50% - 8px);
+  }
+
+  &.bottom {
+    bottom: 0;
+    top: 100%;
+
+    &::before {
+      bottom: 0;
+      top: -16px;
+    }
+  }
+
+  &.flush-r {
+    right: -.5rem;
+    left: auto;
+
+    &::before {
+      right: .75rem;
+      left: auto;
+    }
+  }
+
+  &.flush-l {
+    left: -.5rem;
+
+    &::before {
+      left: .65rem;
+    }
+  }
+}
+
+%has-tooltip {
+  @include has-tooltip;
+}
+
+%tooltip {
+  @include tooltip;
+}
+
+.has-tooltip {
+  @extend %has-tooltip !optional;
+}
+
+
+.tooltip {
+  @extend %tooltip !optional;
+}
