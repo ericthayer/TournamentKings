@@ -13,7 +13,7 @@
     "cross-env": "^5.1",
     "jquery": "^3.2",
     "jquery-typeahead": "^2.10.6",
-    "laravel-mix": "^2.0",
+    "laravel-mix": "^6.0",
     "lodash": "^4.17.11",
     "moment": "^2.24.0",
     "popper.js": "^1.12",
@@ -24,11 +24,11 @@
     "vue": "2.*"
   },
   "devDependencies": {
-    "css-loader": "^2.1.1",
+    "css-loader": "^6.7.3",
     "purify-css": "^1.2.5",
     "purifycss-webpack": "^0.7.0",
-    "style-loader": "^0.23.1",
+    "style-loader": "^3.3.1",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2"
+    "stylus-loader": "^7.1.0"
   }
 }
